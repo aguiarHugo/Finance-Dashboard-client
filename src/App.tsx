@@ -1,7 +1,17 @@
+import { useMemo } from "react"
+import { createTheme } from "@mui/material/styles"
+import { themeSettings } from "./theme"
+import { ThemeProvider } from "@mui/material"
+import { CssBaseline } from "@mui/material"
+
 function App() {
+  const theme = useMemo(() => createTheme(themeSettings), [])
   return (
     <div className="app">
-      Oi
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        
+      </ThemeProvider>
     </div>
   )
 }
