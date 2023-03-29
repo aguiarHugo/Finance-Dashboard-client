@@ -1,3 +1,4 @@
+import DashboardBox from "@/components/DashboardBox";
 import { Box, useTheme, useMediaQuery } from "@mui/material"
 
 type Props = {}
@@ -65,27 +66,16 @@ const Dashboard = (props: Props) => {
       } 
     }
     >
-      <Box bgcolor="#000" gridArea="a"></Box>
-
-      <Box bgcolor="#000" gridArea="b"></Box>
-
-      <Box bgcolor="#000" gridArea="c"></Box>
-
-      <Box bgcolor="#000" gridArea="d"></Box>
-
-      <Box bgcolor="#000" gridArea="e"></Box>
-
-      <Box bgcolor="#000" gridArea="f"></Box>
-
-      <Box bgcolor="#000" gridArea="g"></Box>
-
-      <Box bgcolor="#000" gridArea="h"></Box>
-
-      <Box bgcolor="#000" gridArea="i"></Box>
-
-      <Box bgcolor="#000" gridArea="j"></Box>
-
-
+      <DashboardBox gridArea="a"></DashboardBox>
+      <DashboardBox gridArea="b"></DashboardBox>
+      <DashboardBox gridArea="c"></DashboardBox>
+      <DashboardBox gridArea="d"></DashboardBox>
+      <DashboardBox gridArea="e"></DashboardBox>
+      <DashboardBox gridArea="f"></DashboardBox>
+      <DashboardBox gridArea="g"></DashboardBox>
+      <DashboardBox gridArea="h"></DashboardBox>
+      <DashboardBox gridArea="i"></DashboardBox>
+      <DashboardBox gridArea="j"></DashboardBox>
     </Box>
   )
 }
