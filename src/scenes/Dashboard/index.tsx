@@ -1,5 +1,4 @@
-import DashboardBox from "@/components/DashboardBox";
-import { Box, useTheme, useMediaQuery } from "@mui/material"
+import { Box, useMediaQuery } from "@mui/material"
 import Row1 from "./Row1";
 import Row2 from "./Row2";
 import Row3 from "./Row3";
@@ -52,7 +51,6 @@ const gridTemplateSmallScreens = `
 
 const Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)")
-  const { palette } = useTheme();
   return (
     <Box width="100%" height="100%" display="grid" gap="1.5rem"
       sx={
