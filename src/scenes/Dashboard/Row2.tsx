@@ -56,7 +56,7 @@ const Row2 = () => {
         }
       })
     );
-  }, [operationalData]);
+  }, [productData]);
 
   return (
     <>
