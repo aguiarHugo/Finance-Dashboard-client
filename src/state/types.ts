@@ -47,10 +47,22 @@ export interface GetProductsResponse {
   __v: number;
   price: number;
   expense: number;
-
-  expenseByCategory: ExpensesByCategory;
   
   transactions: Array<string>;
   monthlyData: Array<Month>;
   dailyData: Array<Day>;
 }
+
+export interface GetTransactionsResponse {
+  id: string;
+  _id: string;
+  createdAt: string;
+  updatedAt: string;
+  buyer: string;
+ 
+  __v: number;
+  amount: number;
+
+  productsId: Array<string>;
+}
+
